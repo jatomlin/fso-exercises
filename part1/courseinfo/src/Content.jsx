@@ -1,11 +1,9 @@
+import Part from './Part.jsx'
+
 const Content = (props) => {
   return (
     <div>
-      { props.parts.map((part) => (
-        <p>              
-          {part.name} {part.exercises}
-        </p>
-    ))}
+      {props.parts.map((part) => (<Part part={part} />))}
     </div>
   )
 }
